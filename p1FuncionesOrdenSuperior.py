@@ -61,4 +61,7 @@ def dameFuncion(nombre):
   
   return None
 
-print(dameFuncion('max')(2,7,-3,1))
+# Control para que solo imprima cuando se ejecuta por consola directamente
+# este archivo.
+if __name__ == '__main__':
+  print(dameFuncion('max')(2,7,-3,1))
