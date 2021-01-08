@@ -3,7 +3,7 @@ class Termometro():
     self.__unidadM = 'C'
     self.__temperatura = 0
   
-  def conversor(self, temp, unidad):
+  def __conversor(self, temp, unidad):
     if unidad == 'C':
       return "{}º F".format(temp * 9/5 + 32)
     elif unidad == 'F':
@@ -32,7 +32,7 @@ class Termometro():
     if uniM == None or uniM == self.__unidadM:
       return self.__str__()
     else:
-      return self.conversor(self.__temperatura, self.__unidadM)
+      return self.__conversor(self.__temperatura, self.__unidadM)
 
 
 t = Termometro()
